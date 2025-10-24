@@ -5,10 +5,7 @@ class Solution {
         {
             if(nums[right]!=val)
             {
-                int temp = nums[left];
-                nums[left] = nums[right];
-                nums[right] = temp;
-                left++;
+                nums[left++] = nums[right];
             }
         }
         return left;
